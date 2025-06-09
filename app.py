@@ -12,12 +12,12 @@ bcrypt = Bcrypt(app)
 app.secret_key = "advpjsh"
 
 # Configuración de MongoDB Atlas
-client = MongoClient("tu enlace de base de datos aquí")
+client =    ("tu enlace de base de datos aquí")
 db = client['db2'] #Nombre de tu base de datos aquí
 collection = db['usuarios'] #Nombre de tu colección aquí
 
 # Configuración de SendGrid
-SENDGRID_API_KEY = 'enlace de la API de SendGrid aquí' 
+SENDGRID_API_KEY = 'c162af0e9c3552dd8d422e4e00c5a8f6' 
 
 # Serializador para crear y verificar tokens
 serializer = Serializer(app.secret_key, salt='password-reset-salt')
